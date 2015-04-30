@@ -1,5 +1,5 @@
 <?php
-class UConnMenScoreboard{
+class UConnFootballScoreboard{
 
 	public function __construct()
     {
@@ -8,7 +8,7 @@ class UConnMenScoreboard{
 
 	private function makeScoreboard(){
 		/* live spreadsheet */
-		$url = 'https://docs.google.com/spreadsheets/d/1yu3PJqaNBmJKhNeJMyocaUZZCDjYJXTQ1MCg8NuycB8/edit?usp=sharing';
+		$url = 'https://docs.google.com/spreadsheets/d/1HzVQGKbtCMTHv-LsSJEc_COJMw938mQqiy5AIMkqrRg/edit?usp=sharing';
 		/* get spreadsheet and convert to array */
 		$scoreboard = $this->google_spreadsheet_to_array_v3($url);
 		/* take array and build scoreboard */
@@ -16,7 +16,7 @@ class UConnMenScoreboard{
 		/* p2p api key */
 		$P2Paccesstoken = '874ai9840kqvuyojkyqp4k49o6q56yyfa35';
 		/* slug of story to update */
-		$P2Pslug = 'hc-uconn-men-scoreboard-projects';
+		$P2Pslug = 'hc-uconn-football-scoreboard-projects';
 		/* p2p api location of item to update */
 		$P2Purl = 'http://content-api.p2p.tribuneinteractive.com/content_items/'.$P2Pslug.'.json';
 
@@ -184,5 +184,5 @@ class UConnMenScoreboard{
 	}
 
 }
-$uc = new UConnMenScoreboard();
+$uc = new UConnFootballScoreboard();
 ?>
