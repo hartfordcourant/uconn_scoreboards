@@ -14,7 +14,7 @@ class UConnMenFullScoreboard{
 		/* take array and build scoreboard */
 		$scores = $this->buildScoreboard($scoreboard);
 		/* p2p api key */
-		$P2Paccesstoken = '874ai9840kqvuyojkyqp4k49o6q56yyfa35';
+		$P2Paccesstoken = 'xxx';
 		/* slug of story to update */
 		$P2Pslug = 'hc-uconn-womens-basketball-schedule-results';
 		/* p2p api location of item to update */
